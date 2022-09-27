@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.34bea7fa.js",
+    "static/js/787.dcc73137.chunk.js": "/static/js/787.dcc73137.chunk.js",
+    "static/media/women6.jpg": "/static/media/women6.6d1f4070fe8f5d31a864.jpg",
+    "static/media/electronics.jpg": "/static/media/electronics.79e2fb4e0fc3cd44fe74.jpg",
+    "static/media/mens3.jpg": "/static/media/mens3.feb55954922574fe9d93.jpg",
+    "static/media/jewelery6.jpg": "/static/media/jewelery6.57fcc48a04febd152e3f.jpg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.34bea7fa.js.map": "/static/js/main.34bea7fa.js.map",
+    "787.dcc73137.chunk.js.map": "/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.34bea7fa.js"
+  ]
+}
