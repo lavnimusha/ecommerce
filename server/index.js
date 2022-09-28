@@ -8,7 +8,6 @@ app.use(express.static('public'));
 const bodyParser = require("body-parser");
 require('dotenv').config()
 const cors = require("cors");
-//const stripe = require('stripe')('sk_test_51LQektHTY9l6Rz53ckR3CyIA2aENdjIB77OMb51pJuNNu3TVnSJrpgIcRmDQQ7cvQFj3n92Jvl2XqDs8blCLl6cm00XSZYANEz');
 const stripe=require('stripe')(`${process.env.STRIPE_KEY}`)
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
