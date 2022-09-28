@@ -86,6 +86,12 @@ export default function PrimarySearchAppBar() {
 
   const isMenuOpen = Boolean(anchorEl);
   const {cart} = useContext(CartContext)
+  //const [cartCount, setCartCount] = React.useState(0)
+  let cartCount = 0
+if (cart != null){
+  cartCount=Object.entries(cart).length
+  console.log(cartCount)}
+
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
   
 
@@ -160,7 +166,7 @@ export default function PrimarySearchAppBar() {
     >
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new items" color="inherit">
-          <Badge badgeContent={Object.entries(cart).length} color="error">
+          <Badge badgeContent={cartCount} color="error">
             <ShoppingCartIcon onClick={()=>{navigate(`/cart`)}}/>
           </Badge>
         </IconButton>
@@ -280,7 +286,7 @@ export default function PrimarySearchAppBar() {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={Object.entries(cart).length} color="error">
+              <Badge badgeContent={cartCount} color="error">
                 <ShoppingCartIcon onClick={()=>{navigate(`/cart`)}}/>
               </Badge>
             </IconButton>

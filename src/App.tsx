@@ -12,8 +12,7 @@ import ViewProduct from './Pages/ViewProduct';
 import Cart from './Pages/Cart'
 import SignUp from './Pages/SignUp';
 import SignIn from './Pages/SignIn';
-import {useReducer, createContext} from 'react'
-
+import Success from './Pages/Success';
 import CartDataContext from './Components/CartDataContext'
 
 
@@ -42,6 +41,7 @@ function App() {
             <Route path='/cart' element={<Cart />}/>
             <Route path='/signup' element={<SignUp />}/>
             <Route path='/signin' element={<SignIn />}/>
+            <Route path='/success' element={<Success />}/>
         </Routes> 
         </LayOut>
     </CartDataContext> 

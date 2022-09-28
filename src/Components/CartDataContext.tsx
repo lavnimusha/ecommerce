@@ -20,7 +20,7 @@ import {useReducer, createContext} from 'react'
     cart: ProductEntry;
     setCart: Function; //action type here
   }>({
-    cart: {id:{picture:'', title:'', price:''}},
+    cart: {id: {picture:'', title:'', price:''}},
     setCart: () => null,
   }); 
 
@@ -35,8 +35,10 @@ const CartDataContext = ({children}: Props) =>  {
     const starCountRef = ref(database, 'shopping/');
     onValue(starCountRef, (snapshot) => {
       const data = snapshot.val();
-      setCart(data)
+      console.log("#################")
       
+      setCart(data)
+      console.log(cart)
     });
     
   },[])

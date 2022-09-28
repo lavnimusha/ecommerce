@@ -16,8 +16,7 @@ app.use(cors());
 const mongoose = require('mongoose')
 
 const YOUR_DOMAIN = 'http://localhost:4242';
-/* mongodb+srv://<username>:<password>@cluster0.ypiet0h.mongodb.net/?retryWrites=true&w=majority */
-const mongoUri = `mongodb+srv://lnimusha:0zqgqKqXk0UVCySd@cluster0.ypiet0h.mongodb.net/login?retryWrites=true&w=majority`
+const mongoUri = process.env.MONGO_URI
 
 
 app.post("/create-checkout-session", async (req, res) => {
@@ -40,8 +39,8 @@ app.post("/create-checkout-session", async (req, res) => {
               quantity: data[1].count,
             }
           }),
-        success_url: `http://localhost:4242/success.html`,
-        cancel_url: `http://localhost:4242//cancel.html`,
+        success_url: `http://localhost:3000/success`,
+        cancel_url: `http://localhost:4242/cancel.html`,
       })
       res.json({ url: session.url })
     } catch (e) {
