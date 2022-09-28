@@ -7,7 +7,9 @@ Sourced data from https://fakestoreapi.com/
 
 
 ##DEMO
-[screen-recording (3).webm](https://user-images.githubusercontent.com/40901373/192688290-dbc1606e-1812-4e5c-954b-1be4515355f0.webm)
+[screen-recording (3).webm](https://user-images.githubusercontent.com/40901373/192689337-7eac4297-1108-4c0f-b780-532e28dbecd1.webm)
+
+
 
 
 
