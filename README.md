@@ -1,12 +1,12 @@
 ## e-commerce website
  
 ## Skills
-  #Frontend: React.js, TypeScript, Material-Ui and Motion 
-  #Backend: Node.js, Mongodb and Express
+  # Frontend: React.js, TypeScript, Material-Ui and Motion 
+  # Backend: Node.js, Mongodb and Express
 Sourced data from https://fakestoreapi.com/
 
 
-##DEMO
+## DEMO
 [screen-recording (3).webm](https://user-images.githubusercontent.com/40901373/192689337-7eac4297-1108-4c0f-b780-532e28dbecd1.webm)
 
 
