@@ -26,14 +26,15 @@ app.post("/create-checkout-session", async (req, res) => {
         payment_method_types: ["card"],
         mode: "payment",
         line_items: Object.entries(req.body).map((data) => {
-           console.log(data[0], data[1].count)
+
+           console.log(data[0], data[1])
             return {
               price_data: {
                 currency: "usd",
                 product_data: {
                   name: data[0],
                 },
-                unit_amount: 500,
+                unit_amount: data[1].price*100,
               },
               quantity: data[1].count,
             }

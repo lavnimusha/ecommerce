@@ -23,7 +23,7 @@ function LandingPage() {
   return (
     <Box  sx={{display:"flex", flexDirection:"column"}}>
 
-      <Box className="box" sx={{display: 'flex',width:"70vw", justifyContent: 'space-evenly', mx: "auto", mt: 1, mb:2}}>  
+      {/* <Box className="box" sx={{display: 'flex',width:"70vw", justifyContent: 'space-evenly', mx: "auto", mt: 1, mb:2}}>  
           <Box>
             <Button  onClick={()=>{navigate('/allproducts', { state: { category: "men's clothing" } })}}>Men</Button>
           </Box>
@@ -36,7 +36,7 @@ function LandingPage() {
           <Box>
             <Button onClick={()=>{navigate('/allproducts', { state: { category: "electronics" } })}}>Electronics</Button>
           </Box>
-      </Box>
+      </Box> */}
       
       {/* <Divider/> */}
       
